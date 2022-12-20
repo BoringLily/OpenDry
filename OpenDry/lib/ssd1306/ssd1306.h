@@ -2,14 +2,16 @@
 #define MAIN_SSD1306_H_
 
 #include "driver/spi_master.h"
+#include "../../include/opendry_config.h"
 
 #define CONFIG_I2C_INTERFACE 1
 #define CONFIG_FLIP 0
 #define CONFIG_SSD1306_128x64 1
-#define CONFIG_SDA_GPIO GPIO_NUM_1
-#define CONFIG_SCL_GPIO GPIO_NUM_0
+#define CONFIG_SDA_GPIO OLED_SDA
+#define CONFIG_SCL_GPIO OLED_SCL
 #define CONFIG_RESET_GPIO -1
 #define CONFIG_OFFSETX 0
+
 
 // Following definitions are bollowed from 
 // http://robotcantalk.blogspot.com/2015/03/interfacing-arduino-with-ssd1306-driven.html

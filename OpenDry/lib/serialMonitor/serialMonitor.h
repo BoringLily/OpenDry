@@ -1,5 +1,3 @@
-
-
 #ifndef __SERIALMONITOR_H__
 #define __SERIALMONITOR_H__
 
@@ -14,10 +12,10 @@
 extern "C" {
 #endif
 
-esp_err_t serial_init(uart_port_t uart_num);
+esp_err_t serial_init();
 
 
-esp_err_t serial_out( char * strBuffer, uart_port_t uart_num);
+esp_err_t serial_out(char * strBuffer);
 
 
 #ifdef __cplusplus
